@@ -1,5 +1,6 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 const CIcon = () => <svg className="w-15 m-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z" /><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z" /><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z" /></svg>
 const CppIcon = () => <svg className="w-15 m-2" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
@@ -22,10 +23,10 @@ const IndexPage = () => {
         <h1 className="max-w-xl mx-auto text-4xl font-bold text-white py-10 px-3">Ryosuke Miyazaki</h1>
       </header>
       <main className="max-w-xl mx-auto px-3">
-        <h2 className="text-3xl font-bold my-3">About</h2>
+        <h2 className="text-3xl font-bold mt-5 mb-2">About</h2>
         <p>関東在住のB3です。</p>
-        <h2 className="text-3xl font-bold my-3">Works</h2>
-        <ul className="list-disc">
+        <h2 className="text-3xl font-bold mt-5 mb-2">Works</h2>
+        <ul className="list-disc ml-4">
           <li>
             <a href="https://iidx-green.vercel.app/" className="text-sky-600">IIDXギアチェン計算機</a>
             <p>beatmania IIDX において鍵盤ギアチェンを行った場合の緑数字を計算</p>
@@ -39,23 +40,13 @@ const IndexPage = () => {
             <p>自作 C コンパイラ</p>
           </li>
         </ul>
-        <h2 className="text-3xl font-bold my-3">Skills & Achivements</h2>
-        <table className="border border-collapse">
-          <tbody>
-            <tr>
-              <th className="border text-start">2025/10 現在</th>
-              <td>AtCoder Algorithm 水色 / Heuristic 水色</td>
-            </tr>
-            <tr>
-              <th className="border text-start">2023/11</th>
-              <td>ICPC Asia Yokohama Regional 大会出場</td>
-            </tr>
-            <tr>
-              <th className="border text-start">2025/7</th>
-              <td>情報処理安全確保支援士試験 合格 (未登録)</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2 className="text-3xl font-bold mt-5 mb-2">Skills & Achivements</h2>
+
+        <div className="flex items-center">
+          <StaticImage src="../images/atcoder_logo_transparent.png" alt="atcoder logo" width={60} className="m-2" />
+          <p>Algorithm 水色 / Heuristic 水色</p>
+        </div>
+
         <div className="flex">
           <CIcon />
           <CppIcon />
@@ -66,8 +57,29 @@ const IndexPage = () => {
           <VimIcon />
         </div>
 
-        <h2 className="text-3xl font-bold my-3">Links</h2>
-        <ul>
+        <table className="border border-collapse">
+          <tbody>
+            {/* <tr>
+              <th className="border border-gray-300 text-start p-2">2025/10 現在</th>
+              <td className="border border-gray-300 p-2">AtCoder Algorithm 水色 / Heuristic 水色</td>
+            </tr> */}
+            <tr>
+              <th className="border border-gray-300 text-start p-2">2022/12</th>
+              <td className="border border-gray-300 p-2">応用情報技術者試験 合格</td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-start p-2">2023/11</th>
+              <td className="border border-gray-300 p-2">ICPC Asia Yokohama Regional 大会出場</td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-start p-2">2025/7</th>
+              <td className="border border-gray-300 p-2">情報処理安全確保支援士試験 合格 (未登録)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 className="text-3xl font-bold mt-5 mb-2">Links</h2>
+        <ul className="list-disc ml-4">
           <li><a href="https://github.com/ma-tw/" className="text-sky-600">GitHub</a></li>
           <li><a href="https://atcoder.jp/users/ma_tw/" className="text-sky-600">AtCoder</a></li>
           <li><a href="https://ma-tw.hatenablog.com/" className="text-sky-600">はてなブログ</a></li>
