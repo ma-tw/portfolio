@@ -33,10 +33,12 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --prefix-paths
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
