@@ -102,12 +102,12 @@ const IndexPage = () => {
               <td className="border border-gray-300 p-2">ICPC Asia Yokohama Regional 大会出場</td>
             </tr>
             <tr>
-              <th className="border border-gray-300 text-start p-2">2025/7</th>
+              <th className="border border-gray-300 text-start p-2">2025/07</th>
               <td className="border border-gray-300 p-2">情報処理安全確保支援士試験 合格 (未登録)</td>
             </tr>
             <tr>
-              <th className="border border-gray-300 text-start p-2">2026/8</th>
-              <td className="border border-gray-300 p-2">セキュリティ・キャンプ2026全国大会 Y2 ゼミ受講予定</td>
+              <th className="border border-gray-300 text-start p-2">2026/08</th>
+              <td className="border border-gray-300 p-2">セキュリティ・キャンプ2026全国大会 Y2 ゼミ受講予定<br /><a href="https://zenn.dev/mahta/articles/dd31e54ffb9eb0" className="text-sky-600">応募課題回答</a></td>
             </tr>
           </tbody>
         </table>
