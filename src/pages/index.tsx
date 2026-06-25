@@ -53,19 +53,19 @@ const IndexPage = () => {
         <h2 className="text-3xl font-bold mt-5 mb-2">Works</h2>
         <ul className="list-disc ml-4">
           <li>
-            <a href="https://iidx-green.vercel.app/" className="text-sky-600">IIDXギアチェン計算機</a>
+            <a href="https://iidx-green.vercel.app/" className="text-sky-600">IIDXギアチェン計算機</a> (<a href="https://github.com/ma-tw/iidx-green" className="text-sky-600">GitHub</a>)
             <p>beatmania IIDX において鍵盤ギアチェンを行った場合の緑数字を計算</p>
           </li>
           <li>
-            <a href="https://ma-tw.github.io/iidx-grass/" className="text-sky-600">草寺</a>
+            <a href="https://ma-tw.github.io/iidx-grass/" className="text-sky-600">草寺</a> (<a href="https://github.com/ma-tw/iidx-grass" className="text-sky-600">GitHub</a>)
             <p>beatmania IIDX における打鍵数を GitHub のヒートマップ風に表示</p>
           </li>
           <li>
-            <a href="https://github.com/ma-tw/tdcc/" className="text-sky-600">tdcc</a>
+            <a href="https://github.com/ma-tw/tdcc/" className="text-sky-600">tdcc</a> (<a href="https://github.com/ma-tw/tdcc" className="text-sky-600">GitHub</a>)
             <p>自作 C コンパイラ (製作中、変数の使用と if 文等まで実装済)</p>
           </li>
           <li>
-            <a href="https://github.com/ma-tw/mysh/" className="text-sky-600">mysh</a>
+            <a href="https://github.com/ma-tw/mysh/" className="text-sky-600">mysh</a> (<a href="https://github.com/ma-tw/mysh" className="text-sky-600">GitHub</a>)
             <p>自作シェル <br/> リダイレクトやパイプ、fg、bg にも対応</p>
           </li>
         </ul>
